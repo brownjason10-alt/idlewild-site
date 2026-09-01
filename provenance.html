@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Idlewild Shore — Where it comes from</title>
+<meta name="description" content="The photograph and the recording behind Idlewild Shore: the Lake Erie shore, shown beside what the app draws.">
+<style>
+  :root {
+    --ink: #1c2733;
+    --ink-soft: #4c5b68;
+    --rule: #d3d8dc;
+    --page: #f4f2ee;
+    --card: #fbfaf8;
+    --sky-1: #7ba6cf;
+    --sky-2: #a2c0d9;
+    --sky-3: #bfcdd6;
+    --sand: #d9d0c6;
+    --sea: #4f7480;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #dfe4e8;
+      --ink-soft: #98a6b2;
+      --rule: #2b3542;
+      --page: #0f1524;
+      --card: #151d2e;
+      --sky-1: #152250;
+      --sky-2: #3a4d80;
+      --sky-3: #5573a1;
+      --sand: #6b5f57;
+      --sea: #27495c;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .band {
+    height: 132px;
+    background: linear-gradient(180deg, var(--sky-1) 0%, var(--sky-2) 42%, var(--sky-3) 68%, var(--sea) 69%, var(--sea) 88%, var(--sand) 88%);
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2.4rem 1.4rem 4rem;
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .3rem; font-weight: 600; letter-spacing: -0.01em; }
+  .tagline { color: var(--ink-soft); margin: 0 0 2.4rem; }
+  h2 { font-size: 1.15rem; margin: 2.8rem 0 .8rem; font-weight: 600; }
+  p { margin: 0 0 1rem; }
+  a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1.1rem 1.2rem;
+    margin: 0 0 1rem;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1.4rem 0 .6rem;
+  }
+  @media (max-width: 34rem) { .pair { grid-template-columns: 1fr; } }
+  figure { margin: 0; }
+  figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--card);
+  }
+  figcaption {
+    color: var(--ink-soft);
+    font-size: .88rem;
+    line-height: 1.45;
+    margin-top: .5rem;
+  }
+  figcaption strong { color: var(--ink); font-weight: 600; }
+  audio { width: 100%; margin: .3rem 0 .1rem; }
+  .aud { margin: 1.2rem 0; }
+  .aud .lbl { font-size: .88rem; color: var(--ink-soft); }
+  .aud .lbl strong { color: var(--ink); font-weight: 600; }
+  ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: .45rem; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0 0; }
+  footer { color: var(--ink-soft); font-size: .9rem; padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+<div class="band" role="presentation"></div>
+<main>
+
+  <h1>Where it comes from</h1>
+  <p class="tagline">The photograph and the recording behind Idlewild Shore.</p>
+
+  <p>Idlewild Shore draws one lake: <strong>the Lake Erie shore</strong>. Not a
+  library of beaches and not a generated soundscape &mdash; one shore, on one
+  afternoon, that I stood on with a phone in my hand.</p>
+
+  <p>That is an easy thing to claim and a hard thing to prove, so this page puts
+  the source beside the result and lets you decide.</p>
+
+  <h2>The picture</h2>
+
+  <div class="pair">
+    <figure>
+      <img src="assets/lake-photo.jpg" alt="A photograph of the Lake Erie shore on a hazy summer afternoon: pale sky, grey-green water, a foam line, and a wide grey-brown beach with a band of pebbles running across it.">
+      <figcaption><strong>The photograph.</strong> The Lake Erie shore, taken
+      the same day as the recording. A hazy afternoon with the sun lost in the
+      haze.</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/shore-frame.jpg" alt="A frame from Idlewild Shore: the same composition rendered by the app, with a sun and its glitter path on the water, and shells scattered along the strand line.">
+      <figcaption><strong>What the app draws.</strong> A frame rendered on the
+      device, not a photograph and not a video.</figcaption>
+    </figure>
+  </div>
+
+  <p>What came from the photograph:</p>
+
+  <ul>
+    <li><strong>The composition.</strong> Where the horizon sits, and how much of
+    the frame is water against how much is beach.</li>
+    <li><strong>The colour of the water</strong> &mdash; that particular grey-green
+    that goes colder and bluer toward the horizon. It is sampled, not chosen.</li>
+    <li><strong>The band of pebbles across the sand.</strong> It is in the
+    photograph, a little above the middle of the beach, and it is in the app. It
+    is the detail that makes it this shore rather than a shore.</li>
+  </ul>
+
+  <p>What did not come from the photograph, because it would not be true:</p>
+
+  <ul>
+    <li><strong>The sun.</strong> There is no sun in the photograph &mdash; it was
+    a hazy day. In the app the sun is worked out from the real time and your time
+    zone, so its height and colour are whatever they actually are when you open
+    it. A December afternoon sits low and warm; a June noon is high and pale.</li>
+    <li><strong>The shells.</strong> Ten kinds, drawn rather than photographed.</li>
+    <li><strong>The sand.</strong> It reads warmer in the app than in the
+    photograph. That is a departure and I would rather say so than have you notice
+    it yourself.</li>
+  </ul>
+
+  <h2>The sound</h2>
+
+  <p>The water you hear is the water in that photograph, recorded standing at
+  the edge of it.</p>
+
+  <div class="aud">
+    <p class="lbl"><strong>The recording, as made.</strong> 31 seconds, untouched.</p>
+    <audio controls preload="none" src="assets/lake-recording.m4a"></audio>
+  </div>
+
+  <div class="aud">
+    <p class="lbl"><strong>What the app plays.</strong> 24 seconds, cut to loop
+    without a seam.</p>
+    <audio controls preload="none" src="assets/lake-loop.mp3"></audio>
+  </div>
+
+  <p>The difference between the two is a cut and nothing else. Nothing was
+  layered in, nothing was synthesised, and there is no music underneath it.</p>
+
+  <div class="card">
+    <p>The app follows your ringer switch, so it can be watched with the sound
+    off. It was built to work that way &mdash; but this is the part you would only
+    get by being there, which is why it is on this page.</p>
+  </div>
+
+  <h2>Why it is one place</h2>
+
+  <p>A library of beaches would have been easier and would have looked like more.
+  One place is the harder and more honest version: it means the water has a
+  colour it actually had, on a day that actually happened, and it means there is
+  a person who can be asked about it.</p>
+
+  <p>The photograph and the recording are mine, both made at the Lake Erie
+  shore. The originals exist.</p>
+
+  <hr>
+  <footer>
+    <p>Idlewild Shore &middot; <a href="support.html">Support</a> &middot;
+    <a href="privacy.html">Privacy</a></p>
+    <p>This page loads nothing from anywhere else. No fonts, no scripts, no
+    analytics &mdash; the picture and the two audio files are served from this
+    site and nothing else is fetched at all.</p>
+  </footer>
+
+</main>
+</body>
+</html>
