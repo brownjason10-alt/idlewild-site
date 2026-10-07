@@ -1,0 +1,70 @@
+:root {
+  --ink: #1d2733;
+  --ink-soft: #52606c;
+  --rule: #d6dde2;
+  --page: #f4f6f8;
+  --card: #ffffff;
+  --court-1: #0d1c33;
+  --court-2: #070f1f;
+  --court-3: #0d1425;
+  --you: #3ee6ff;
+  --them: #ff7ad1;
+  --ball: #fff3c4;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e2e8ec;
+    --ink-soft: #9aa8b3;
+    --rule: #26324a;
+    --page: #070d1a;
+    --card: #101a2c;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+/* The court: their paddle, the ball, your paddle. */
+.band {
+  position: relative;
+  height: 132px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 61% 52%, var(--ball) 0, var(--ball) 8px, rgba(255, 226, 122, .45) 10px, rgba(255, 226, 122, 0) 30px),
+    linear-gradient(180deg, var(--court-1) 0%, var(--court-2) 50%, var(--court-3) 100%);
+}
+.band::before,
+.band::after {
+  content: "";
+  position: absolute;
+  height: 9px;
+  width: 92px;
+  border-radius: 5px;
+}
+.band::before {
+  top: 20px; left: 34%;
+  background: var(--them);
+  box-shadow: 0 0 16px var(--them);
+}
+.band::after {
+  bottom: 20px; left: 50%;
+  background: var(--you);
+  box-shadow: 0 0 16px var(--you);
+}
+main { max-width: 40rem; margin: 0 auto; padding: 2.4rem 1.4rem 4rem; }
+h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .3rem; font-weight: 600; letter-spacing: -0.01em; }
+.tagline { color: var(--ink-soft); margin: 0 0 2.4rem; }
+h2 { font-size: 1.15rem; margin: 2.6rem 0 .8rem; font-weight: 600; }
+h3 { font-size: 1rem; margin: 1.7rem 0 .3rem; font-weight: 600; }
+p { margin: 0 0 1rem; }
+a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.card { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 1.1rem 1.2rem; margin: 0 0 1rem; }
+.card p:last-child { margin-bottom: 0; }
+ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+li { margin-bottom: .35rem; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0 0; }
+footer { color: var(--ink-soft); font-size: .9rem; padding-top: 1.2rem; }
