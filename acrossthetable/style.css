@@ -1,0 +1,69 @@
+:root {
+  --ink: #1a1233;
+  --ink-soft: #5a5277;
+  --rule: #ddd6ec;
+  --page: #f7f4fb;
+  --card: #ffffff;
+  --night: #120d2b;
+  --night-2: #1b1442;
+  --orange: #ff8a1f;
+  --blue: #39a4ff;
+  --brass: #f6cf6a;
+  --ivory: #fff6e6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #fff6e6;
+    --ink-soft: #c9c0e6;
+    --rule: #3a2f78;
+    --page: #120d2b;
+    --card: #1b1442;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+/* The band: a night table lit by two lamps, Blue's at the top and Orange's at the bottom, with the brass star between. */
+.band {
+  position: relative;
+  height: 132px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 60% 70% at 50% 0%, rgba(48, 140, 255, .55) 0, rgba(48, 140, 255, 0) 100%),
+    radial-gradient(ellipse 60% 70% at 50% 100%, rgba(255, 128, 24, .55) 0, rgba(255, 128, 24, 0) 100%),
+    var(--night);
+}
+.band::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 90px); top: 65px;
+  width: 180px; height: 2px;
+  background: linear-gradient(90deg, rgba(246, 207, 106, 0), var(--brass) 38%, rgba(246, 207, 106, 0) 38%, rgba(246, 207, 106, 0) 62%, var(--brass) 62%, rgba(246, 207, 106, 0));
+}
+.band::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 9px); top: 57px;
+  width: 18px; height: 18px;
+  background: var(--brass);
+  clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
+  filter: drop-shadow(0 0 6px rgba(246, 207, 106, .8));
+}
+main { max-width: 40rem; margin: 0 auto; padding: 2.4rem 1.4rem 4rem; }
+h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .3rem; font-weight: 700; letter-spacing: -0.01em; }
+.tagline { color: var(--ink-soft); margin: 0 0 2.4rem; }
+h2 { font-size: 1.15rem; margin: 2.6rem 0 .8rem; font-weight: 600; }
+h3 { font-size: 1rem; margin: 1.7rem 0 .3rem; font-weight: 600; }
+p { margin: 0 0 1rem; }
+a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.card { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 1.1rem 1.2rem; margin: 0 0 1rem; }
+.card p:last-child { margin-bottom: 0; }
+ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+li { margin-bottom: .35rem; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0 0; }
+footer { color: var(--ink-soft); font-size: .9rem; padding-top: 1.2rem; }
